@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+    text-align: center;
+    font-family: monospace;
+}
+
+.container{
+    border: solid;
+    display: flex;
+    flex-wrap: wrap;
+    border-color: black;
+    width: 380px;
+    height: 380px;
+    margin: auto;
+}
+
+.boxes{
+    border: solid;
+    flex: 1 1 0;
+    padding: 10px;
+}
