@@ -4,13 +4,18 @@ const reset =  document.querySelector("#reset");
 
 function createBoxes(box){
     container.textContent = ''; 
-    for(let i = 0; i < box*box; i++){
-        boxes = document.createElement("div");
-        boxes.classList.add("boxes");
-        boxes.addEventListener("mouseover", function(e){
-            e.target.style.background = "black";
-        })
-        container.appendChild(boxes);
+    for(let i = 0; i < box; i++){
+        boxContainer = document.createElement("div");
+        boxContainer.classList.add("boxContainer")
+        for(let i = 0; i < box; i++){
+            boxes = document.createElement("div");
+            boxes.classList.add("boxes");
+            boxes.addEventListener("mouseover", function(e){
+                e.target.style.background = "black";
+            })
+            boxContainer.appendChild(boxes);
+        }
+        container.appendChild(boxContainer);
     }
 }
 
